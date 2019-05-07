@@ -6,3 +6,48 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+/* No longer necessary to normalize */
+/* We don't want any margins or padding */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* we want to use inheritance! */
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+/* You want the height to change as the window changes */
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba(126, 213, 111, 0.8), 
+    rgba(40, 180, 131, 0.8)), 
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  /* Specify the 4 corners you want to stay
+  /* clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  Triangle challenge */
+  /* Clippy css clip-path maker
+  bennettfeely.com/clippy/ */
+
+ clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+
+
+
+
