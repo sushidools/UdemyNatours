@@ -59,17 +59,24 @@ body {
   height: 35px;
 }
 
+/* Example of using an animation in multiple ways */
+/* .logo:hover {
+  animation: moveInLeft 2s ease-out;
+} */
+
 .text-box {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .heading-primary {
   color: #ffff;
   text-transform: uppercase;
 
   backface-visibility: hidden;
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -104,17 +111,17 @@ body {
     transform: translateX(-100px);
   }
 
-  60% {
+  /* 60% {
     transform: rotate(180deg);
-  }
+  } */
 
   80% {
-    transform: translateX(10px) rotate(180deg);
+    transform: translateX(10px)
   }
 
   100% {
     opacity: 1;
-    transform: translate(0) rotate(180deg);
+    transform: translate(0);
   }
 }
 
@@ -136,4 +143,34 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+/* BUTTON */
+/* link is a state of the button selector */
+
+.btn:link,
+.bthn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+
+  /* So it has it's own space instead of just inline */
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px  rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px  rgba(0, 0, 0, .2)
+}
+
+.btn-white {
+  background-color: #ffff;
+  color: #777;
 }
