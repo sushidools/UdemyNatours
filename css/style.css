@@ -38,6 +38,7 @@ body {
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
+  position: relative;
   /* Specify the 4 corners you want to stay
   /* clip-path: polygon(50% 0, 100% 100%, 0 100%);
   Triangle challenge */
@@ -47,7 +48,14 @@ body {
  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
 
-
+.logo {
+  height: 35px;
+}
 
 
